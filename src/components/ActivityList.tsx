@@ -26,7 +26,7 @@ export default function ActivityList({ activities, dispatch }: ActivityListProps
         activities.map( activity => (
           <div key={activity.id} className="px-5 py-10 bg-white mt-5 flex justify-between shadow-md rounded-xl">
             <div className="space-y-2 relative">
-              <p className={`absolute -top-8 -left-8 px-10 py-2 border font-bold text-white uppercase font-bold rounded-lg hover:bg-white  duration-300
+              <p className={`absolute -top-8 -left-8 px-10 py-2 border font-bold text-white uppercase rounded-lg hover:bg-white  duration-300
               ${activity.category === 1 ? "bg-lime-500 hover:border-lime-500 hover:text-lime-500" : "bg-orange-500 hover:border-orange-500 hover:text-orange-500" }`}>
                 {categoryName(+activity.category)}
               </p>
